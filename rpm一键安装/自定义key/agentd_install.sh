@@ -52,7 +52,7 @@ if [[ $? -eq 0 ]];then
     cat /etc/*release | grep -q -i "7\."
     if [[ $? -eq 0 ]];then
         sleep 1
-        rpm -ivh zabbix-3.0.14-1.el7.centos.x86_64.rpm
+        rpm -ivh zabbix-3.0.14-1.el7.x86_64.rpm
         echo "modify the agentd configuration"
         sleep 1
         sed -i "/^Server=/c\Server=${zabbix_server}" /usr/local/zabbix/etc/zabbix_agentd.conf
@@ -74,7 +74,7 @@ if [[ $? -eq 0 ]];then
     cat /etc/*release | grep -q -i "5\."
     if [[ $? -eq 0 ]];then
         sleep 1
-        rpm -ivh zabbix-3.0.14-1.el7.centos.x86_64.rpm
+        rpm -ivh zabbix-3.0.14-1.el5.x86_64.rpm
         echo "modify the agentd configuration"
         sleep 1
         sed -i "/^Server=/c\Server=${zabbix_server}" /usr/local/zabbix/etc/zabbix_agentd.conf
