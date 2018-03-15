@@ -36,7 +36,7 @@ do
             id="$"
             column_id_id=$id$column_id
 
-            iostats=`iostat -xN |egrep -o "^${dev}[[:space:]]+.*" |awk "{print ${column_id_id}}"`
+            iostats=`iostat -xN 1 2|egrep -o "^${dev}[[:space:]]+.*" |awk "   NR==2{print ${column_id_id}}"`
         fi
     column_id=$[column_id + 1]
 done
