@@ -19,7 +19,7 @@ Group:      zabbix
 License:    GPL
 #授权许可方式
 
-URL:        http://www.jingkunsystem.com
+URL:        http:/www.  dl1548.site
 #软件的主页
 
 #源代码包，可以有Source0,Source1等源
